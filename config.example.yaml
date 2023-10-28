@@ -1,0 +1,11 @@
+global:
+  webdav: https://cloud.abc.com/dav/files/horsley/backup/
+  user: horsley
+  password: Bz92f-gpmnm
+  timeFmt: 2006-01-02
+  rotate: 720h
+jobs:
+  - name: bitwarden
+    dir: /root/bitwarden-data/
+  - name: trilium
+    dir: /data/trilium-data/backup/
