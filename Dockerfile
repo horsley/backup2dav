@@ -7,6 +7,8 @@ RUN go build -o main
 
 FROM alpine:latest
 
+RUN apk add libc6-compat
+
 WORKDIR /
 COPY --from=builder /app/main /
 ENV CRON_SCHEDULE="3 0 * * *"
